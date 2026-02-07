@@ -1,162 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Usefull Stuff for Life</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      background: #f8f9fa;
-      min-height: 100vh;
-    }
-    main {
-      flex: 1;
-      max-width: 800px;
-      padding: 2rem 3rem 2rem 2rem;
-    }
-    .sidebar {
-      width: 240px;
-      position: fixed;
-      right: 0;
-      top: 0;
-      height: 100vh;
-      background: #fff;
-      border-left: 1px solid #eee;
-      padding: 2rem 1rem 2rem 1rem;
-      box-shadow: -2px 0 6px 0 #eeeeee30;
-      overflow-y: auto;
-    }
-    .sidebar h2 {
-      font-size: 1.2rem;
-      margin-top: 0;
-    }
-    .sidebar ul {
-      list-style: none;
-      padding: 0;
-    }
-    .sidebar li {
-      margin: 1rem 0;
-    }
-    .sidebar a {
-      text-decoration: none;
-      color: #0d6efd;
-      font-weight: 500;
-      transition: color 0.2s;
-    }
-    .sidebar a:hover {
-      color: #093e88;
-    }
-    h1 {
-      font-size: 2.3rem;
-      margin-top: 0.7em;
-      margin-bottom: 0.5em;
-    }
-    h2 {
-      font-size: 1.5rem;
-      margin-top: 2.5em;
-      margin-bottom: 0.5em;
-    }
-    h3 {
-      font-size: 1.1rem;
-      margin-top: 1.5em;
-      margin-bottom: 0.3em;
-      font-weight: 600;
-    }
-    .intro {
-      margin-bottom: 3em;
-      padding: 1em 1.3em;
-      background: #e7f2ff;
-      border-radius: 8px;
-      border: 1px solid #b6dbff;
-      font-size: 1.07rem;
-    }
-    @media (max-width: 900px) {
-      .sidebar {
-        position: static;
-        width: 100%;
-        height: auto;
-        border-left: none;
-        box-shadow: none;
-        padding: 1.5em 1em;
-        margin-bottom: 2em;
-      }
-      main {
-        max-width: 100vw;
-        padding: 1rem;
-      }
-      body {
-        flex-direction: column;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title</title>
+    <style>
+        /* Styles to move the sidebar from right to left */
+        .sidebar {
+            float: left; /* Changed from right to left */
+            width: 250px; /* Width of the sidebar */
+        }
+        .content {
+            margin-left: 260px; /* Adjusted margin to accommodate the sidebar */
+        }
+    </style>
 </head>
 <body>
-  <main>
-    <h1>Usefull Stuff for Life</h1>
-    <div class="intro">
-      Hello! Here a collection on how to do certain things. You will find hyperlinks to videos or products on different topics. All of the things I here I have tried out myself, they work and therefore have my approval! Note: Some of them are in another language than english. Just auto translate it will work fine!
+    <div class="sidebar">
+        <!-- Sidebar content here -->
     </div>
-    <section id="security">
-      <h2>Security</h2>
-      <h3 id="password-manager">Password Manager</h3>
-      <ul>
-        <li><a href="#" target="_blank">Example password manager video</a></li>
-      </ul>
-      <h3 id="protonmail">Protonmail</h3>
-      <ul>
-        <li><a href="https://proton.me/mail" target="_blank">Protonmail Overview</a></li>
-      </ul>
-    </section>
-    <section id="painting">
-      <h2>Painting</h2>
-      <h3 id="realistic-painting">Realistic painting</h3>
-      <ul>
-        <li><a href="#" target="_blank">Realistic painting tutorial</a></li>
-      </ul>
-      <h3 id="abstract-painting">Abstract painting</h3>
-      <ul>
-        <li><a href="#" target="_blank">Abstract painting ideas</a></li>
-      </ul>
-      <h3 id="mixing-colors">Mixing colors</h3>
-      <ul>
-        <li><a href="#" target="_blank">Color mixing chart</a></li>
-      </ul>
-    </section>
-    <section id="cooking">
-      <h2>Cooking and baking</h2>
-      <h3 id="baking-bread">Baking bread</h3>
-      <ul>
-        <li><a href="#" target="_blank">How to bake bread</a></li>
-      </ul>
-      <h3 id="pizzadough">Pizzadough</h3>
-      <ul>
-        <li><a href="#" target="_blank">Easy pizza dough</a></li>
-      </ul>
-      <h3 id="bolognese">Bolognese</h3>
-      <ul>
-        <li><a href="#" target="_blank">Classic bolognese recipe</a></li>
-      </ul>
-      <h3 id="fermenting">Fermenting</h3>
-      <ul>
-        <li><a href="#" target="_blank">Fermenting basics</a></li>
-      </ul>
-    </section>
-  </main>
-  <nav class="sidebar">
-    <h2>Index</h2>
-    <ul>
-      <li><a href="#security">Security</a></li>
-      <li><a href="#painting">Painting</a></li>
-      <li><a href="#cooking">Cooking and baking</a></li>
-    </ul>
-  </nav>
+    <div class="content">
+        <!-- Main content here -->
+    </div>
 </body>
 </html>
