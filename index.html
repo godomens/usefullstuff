@@ -3,50 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Useful Stuff</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-        }
-        .sidebar {
-            width: 200px;
-            position: fixed;
-            right: 0;
-            background-color: #f8f8f8;
-            padding: 20px;
-            box-shadow: -2px 0 5px rgba(0,0,0,0.1);
-        }
-        .content {
-            margin-right: 220px; /* Space for the sidebar */
-            padding: 20px;
-        }
-        h2 {
-            color: #333;
-        }
-    </style>
+    <title>Usefull Stuff for Life</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="content">
-        <h2>Security</h2>
-        <h3>Subheader</h3>
-        <p>Introduction text about Security.</p>
-
-        <h2>Painting</h2>
-        <h3>Subheader</h3>
-        <p>Introduction text about Painting.</p>
-
-        <h2>Cooking and Baking</h2>
-        <h3>Subheader</h3>
-        <p>Introduction text about Cooking and Baking.</p>
-    </div>
-    <div class="sidebar">
-        <h2>Index</h2>
+    <header>
+        <h1>Usefull Stuff for Life</h1>
+    </header>
+    <nav class="sidebar">
         <ul>
-            <li><a href="#security">Security</a></li>
-            <li><a href="#painting">Painting</a></li>
-            <li><a href="#cooking-baking">Cooking and Baking</a></li>
+            <li><a href="#security" target="_blank">Security</a></li>
+            <li><a href="#painting" target="_blank">Painting</a></li>
+            <li><a href="#cooking" target="_blank">Cooking and Baking</a></li>
         </ul>
-    </div>
+    </nav>
+    <main>
+        <section id="security">
+            <h2>Security</h2>
+            <h3>Password Manager</h3>
+            <p>Content about password managers.</p>
+            <h3>Protonmail</h3>
+            <p>Content about Protonmail.</p>
+        </section>
+        <section id="painting">
+            <h2>Painting</h2>
+            <h3>Realistic Painting</h3>
+            <p>Content about realistic painting.</p>
+            <h3>Abstract Painting</h3>
+            <p>Content about abstract painting.</p>
+            <h3>Mixing Colors</h3>
+            <p>Content about mixing colors.</p>
+        </section>
+        <section id="cooking">
+            <h2>Cooking and Baking</h2>
+            <h3>Baking Bread</h3>
+            <p>Content about baking bread.</p>
+            <h3>Pizza Dough</h3>
+            <p>Content about pizza dough.</p>
+            <h3>Bolognese</h3>
+            <p>Content about bolognese.</p>
+            <h3>Fermenting</h3>
+            <p>Content about fermenting.</p>
+        </section>
+    </main>
 </body>
 </html>
