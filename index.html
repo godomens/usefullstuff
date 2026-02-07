@@ -1,1 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Useful Stuff for Life</title>
+  <style>
+    :root {
+      --bg: #121212;
+      --text: #e6e6e6;
+      --muted: #b5b5b5;
+      --accent: #8ab4f8;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      min-height: 100vh;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      padding: 2rem 1.5rem;
+      border-right: 1px solid #1f1f1f;
+    }
+
+    nav h2 {
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav li {
+      margin-bottom: 0.75rem;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      padding: 3rem 4rem;
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 720px;
+      margin-bottom: 3rem;
+    }
+
+    section {
+      margin-bottom: 3.5rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    ul.links {
+      list-style: none;
+      padding-left: 0;
+      margin: 0 0 1rem 0;
+    }
+
+    ul.links li {
+      margin-bottom: 0.4rem;
+    }
+
+    ul.links a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    ul.links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        position: relative;
+        height: auto;
+        border-right: none;
+        border-bottom: 1px solid #1f1f1f;
+      }
+
+      main {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <nav>
+      <h2>Index</h2>
+      <ul>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#painting">Painting</a></li>
+        <li><a href="#cooking">Cooking & Baking</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Useful Stuff for Life</h1>
+      <p class="intro">
+        Hello! Here a collection on how to do certain things. You will find hyperlinks to videos or products on different topics.
+        All of the things I here I have tried out myself, they work and therefore have my approval!<br /><br />
+        <strong>Note:</strong> Some of them are in another language than English. Just auto‑translate it — it will work fine!
+      </p>
+
+      <section id="security">
+        <h2>Security</h2>
+
+        <h3>Password Manager</h3>
+        <ul class="links">
+          <li><a href="#">https://example.com/password-manager</a></li>
+        </ul>
+
+        <h3>ProtonMail</h3>
+        <ul class="links">
+          <li><a href="#">https://proton.me/mail</a></li>
+        </ul>
+      </section>
+
+      <section id="painting">
+        <h2>Painting</h2>
+
+        <h3>Realistic Painting</h3>
+        <ul class="links">
+          <li><a href="#">https://example.com/realistic-painting</a></li>
+        </ul>
+
+        <h3>Abstract Painting</h3>
+        <ul class="links">
+          <li><a href="#">https://example.com/abstract-painting</a></li>
+        </ul>
+
+        <h3>Mixing Colors</h3>
+        <ul class="links">
+          <li><a href="#">https://example.com/mixing-colors</a></li>
+        </ul>
+      </section>
+
+      <section id="cooking">
+        <h2>Cooking and Baking</h2>
+
+        <h3>Baking Bread</h3>
+        <ul class="links">
+          <li><a href="#">https://example.com/bread</a></li>
+        </ul>
+
+        <h3>Pizza Dough</h3>
+        <ul class="links">
+          <li><a href="#">https://example.com/pizza</a></li>
+        </ul>
+
+        <h3>Bolognese</h3>
+        <ul class="links">
+          <li><a href="#">https://example.com/bolognese</a></li>
+        </ul>
+
+        <h3>Fermenting</h3>
+        <ul class="links">
+          <li><a href="#">https://example.com/fermenting</a></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
 
